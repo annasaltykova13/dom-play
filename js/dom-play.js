@@ -32,9 +32,15 @@ function highlightActor(actor) {
     for (const mySpan of spans){
         //highlight current actor
         if (actor == mySpan.dataset.actor) {
-       mySpan.style.backgroundColor = "yellow";
+            mySpan.style.backgroundColor = "yellow";
+            // Subtle neon glow using text-shadow
+            mySpan.style.textShadow = '0 0 4px rgba(255, 215, 0, 0.6)';
+            // Lift the text off the page slightly
+            mySpan.style.boxShadow = '0 2px 5px rgba(0,0,0,0.15)';
         } else {
-       mySpan.style.backgroundColor = "white";
+            mySpan.style.backgroundColor = "white";
+            mySpan.style.textShadow = 'none';
+            mySpan.style.boxShadow = 'none';
          }
     }
 }
