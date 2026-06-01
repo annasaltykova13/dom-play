@@ -34,9 +34,9 @@ function highlightActor(actor) {
         if (actor == mySpan.dataset.actor) {
             mySpan.style.backgroundColor = "yellow";
             // Subtle neon glow using text-shadow
-            mySpan.style.textShadow = '0 0 4px rgba(255, 215, 0, 0.6)';
+            mySpan.style.textShadow = '0 0 4px rgba(255, 25, 0, 0.6)';
             // Lift the text off the page slightly
-            mySpan.style.boxShadow = '0 2px 5px rgba(0,0,0,0.15)';
+            mySpan.style.boxShadow = '0 2px 5px rgba(69, 130, 19, 0.52)';
         } else {
             mySpan.style.backgroundColor = "white";
             mySpan.style.textShadow = 'none';
